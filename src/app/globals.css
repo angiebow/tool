@@ -16,6 +16,147 @@
   }
 }
 
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .text-lSize,
+  .text-mSize {
+    text-align: center; /* Center text alignment */
+  }
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .text-hSize,
+  .text-nSize {
+    text-align: center; /* Center text alignment */
+  }
+
+  .aboutbox {
+    width: 100%; /* Make the aboutbox span the full width on smaller screens */
+  }
+}
+
+  /* Define the desktop styles */
+  .bg-white.text-black.items-center {
+    text-align: center;
+  }
+
+  .bg-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .mx-5 {
+    margin: 0.5rem;
+  }
+
+  .aboutbox {
+    width: 45%;
+  }
+
+  /* Define the mobile styles using media query */
+  @media (max-width: 768px) {
+    .text-aSize {
+      font-size: 13px; 
+    }
+
+    .text-kSize {
+      font-size: 13px; 
+    }
+
+    .text-sSize {
+      font-size: 13px;
+    }
+
+    .text-mSize {
+      font-size: 18px; 
+    }
+
+    .text-nSize {
+      font-size: 18px; 
+    }
+
+    .text-rSize {
+      font-size: 28px;
+    }
+
+    .text-lSize {
+      font-size: 33px; 
+    }
+
+    .text-xSize {
+      font-size: 38px; 
+    }
+
+    .text-hSize {
+      font-size: 40px;
+    }
+
+    .bg-about {
+      flex-direction: column; /* Stack items in column on mobile */
+      height: auto; /* Adjust height as per content on mobile */
+    }
+
+    .aboutbox {
+      width: 90%; /* Adjust width for better mobile layout */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .flex.gap-1 img {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .servicebox {
+      border: 1px solid #000;
+      border-radius: 20px;
+      background-color: gba(255, 252, 252, 0.192);
+      width: 200px;
+      height: 100px;;
+      margin: 5px;
+    }
+
+    .servicebox img {
+      margin: 1;
+      padding: 0%;
+    }
+    
+    .gap-3 {
+      flex-direction: column; /* Stack boxes vertically on mobile */
+      align-items: center; /* Center items horizontally */
+    }
+
+    .box {
+        background-color: transparent;
+        border-radius: 10px; 
+        border: 1px solid #000;
+        height: 20px;
+        width: 40px;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .servicebox {
+      border: 1px solid #000;
+      border-radius: 20px;
+      background-color: gba(255, 252, 252, 0.192);
+      width: 20vw;
+      height: 32vw;
+      margin: 5px;
+    }
+  }
+
+.lun{
+  font-family: 'lunema';
+}
+
+.me{
+  font-family: 'meUB';
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +165,151 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.bg-image {
+  background-image: url('/fixing.png');
+  background-size: h-900 w-1440;
+  height: 900px; 
+}
+
+.bg-picService {
+  background-image: url('/servicePic.png');
+  background-size: h-564 w-1312;
+  background-repeat: no-repeat;
+  height: 564px; 
+}
+
+.bg-about {
+  background-image: url('/red.png'),url('/blueAbout.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  height: 332px;
+}
+
+.bg-service {
+  background-image: url('/blue.png'), url('/redSec.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  height: 900px;
+}
+
+.bg-testimonial {
+  background-image: url('/redTestimonial.png'), url('/blueTestimonial.png'), url('/smallRed.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top right, bottom left, bottom left;
+  height: 909.89px;
+}
+
+.bg-faq {
+  background-image: url('/redFAQ.png'), url('/blueFAQtop.png'), url('/blueFAQbottom.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top left, top left, bottom right;
+  height: 1084px;
+}
+
+.bg-medium {
+  background-image: url('/redMedium.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 543px;
+}
+
+.footer{
+  height: 337px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle, #555 25%, transparent 25%);
+  background-size: 10px 10px;
+  border-radius: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(circle, #888 25%, transparent 25%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel{
+  padding: 5rem;
+  background-color: transparent;
+  color: #fff;
+  height: 100vh;
+}
+
+.mainbox {
+  background-color: transparent;
+  width: 900px;
+}
+
+.aboutbox {
+  background-color: transparent;
+  width: 60vw;
+}
+
+.faqbox {
+  background-color: transparent;
+  width: 70vw;
+  text-align: center;
+}
+
+.mediumbox {
+  background-color: transparent;
+  width: 80vw;
+  text-align: center;
+  align-items: center;
+}
+
+.f1box {
+  background-color: transparent;
+  height: 200px;
+}
+
+.f2box {
+  background-color: transparent;
+  height: 130px;
+}
+
+.centex {
+  text-align: center;
+}
+
+.box {
+  background-color: transparent;
+  border-radius: 10px; 
+  border: 2px solid #000;
+  height: 268px;
+  width: 400px;
+}
+
+.box h3{
+  text-align: center;
+}
+
+.slick-slide div{
+  margin: 0 1rem;
+}
+
+.slick-next{
+  right: -40px !important;
+}
+
+.slick-dots li.slick-active button:before{
+  color: black !important;
+}
+
+.slick-dots li button:before{
+  color: gray !important;
+  font-size: 1rem !important;
+  top: 2rem !important;
 }
